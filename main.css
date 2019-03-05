@@ -100,6 +100,7 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 }
 #aboutme .competence-bar p{
   padding: 10px;
+  font-family: "OptimusPrinceps";
 }
 #aboutme h2{
   margin: 0;
