@@ -1,4 +1,7 @@
 /*============================================================================*/
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   margin: 0;
@@ -29,23 +32,49 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
     ),url("Pictures/Fond.jpg");
   background-size: cover, no-repeat;
 }
-#home .menu{
+#hamburger_side_bar{
+  position: fixed;
+  width: 40vw;
+  height: 100vh;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  background-color: "black";
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+#home .menu1{
+  display: none;
+}
+#home .menu2{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  transition:0.5s;
 }
 #home h2{
   margin: 0;
   font-size: 1.25em;
-  margin-top: 2.5em;
   margin-left: 2em;
   color: white;
   font-family: "OptimusPrincepsBold";
+  transition:0.5s;
 }
 #home i{
   padding: 0;
   margin: 0;
   font-size: 1.25em;
-  padding-top: 2.5em;
+  margin-right: 2em;
+  color: white;
+  transition:0.5s;
+}
+#home .center i{
+  padding: 0;
+  margin: 0;
+  font-size: 1.25em;
+  margin-top: 1.75em;
   margin-right: 2em;
   color: white;
 }
@@ -296,14 +325,56 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   /*==========================================================================*/
   /*==========================================================================*/
 
+  #home .menu1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    z-index: 999;
+    transition:0.5s;
+  }
+  #home .menu1 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 5em;
+  }
+
+  #home .color{
+    text-decoration: none;
+    color: white;
+    font-family: "OptimusPrincepsBold";
+    font-size: 20px;
+    transition:0.5s;
+  }
+
+  #home .menu1 li{
+    margin-left: 60px;
+  }
+
+  #home .menu1 h2{
+    margin-left: 4em;
+    transition:0.5s;
+  }
+
+  #home .menu2{
+    display: none;
+  }
+  /*==========================================================================*/
+  /*==========================================================================*/
+
   #aboutme{
     justify-content: flex-start;
     flex-flow: row nowrap;
+    padding-top: 1.75vw;
   }
   #aboutme .princesse{
     margin: 3vw;
     margin-left: 2vw;
     margin-right: 0;
+    padding-bottom: 1.75vw;
     width: 700px;
     height: 800px;
   }
@@ -333,11 +404,11 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 
   /*==========================================================================*/
   /*==========================================================================*/
-
   #services h1{
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
+    padding: 5vw;
   }
   #services p{
     font-size: 18px;

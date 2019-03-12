@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" href="Pictures/icon.png" />
     <title>Princesse Mononoke</title>
@@ -10,12 +11,25 @@
   <body>
     <!-- =============================== HOME ============================== -->
     <section id="home">
-
-      <div class="menu">
-        <h2>PRINCESS</h2>
-        <i class="fas fa-bars"></i>
+      <div id="first" class="menu1">
+        <h2 id="titre1">PRINCESS</h2>
+        <nav>
+          <ul>
+            <li><a class="color" href="#home">Home</a></li>
+            <li><a class="color" href="#aboutme">About</a></li>
+            <li><a class="color" href="#services">Services</a></li>
+            <li><a class="color" href="#portfolio">Portfolio</a></li>
+            <li><a class="color" href="#">Clients</a></li>
+            <li><a class="color" href="#">Blog</a></li>
+            <li><a class="color" href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-
+      <div id="second" class="menu2">
+        <h2 id='titre2'>PRINCESS</h2>
+        <i id="burg" class="fas fa-bars" onclick="appear('hamburger_side_bar')"></i>
+      </div>
+      <div id="hamburger_side_bar"></div>
       <div class="center">
         <h1>Hello</h1>
         <h3>I Am Developer</h3>
@@ -27,8 +41,8 @@
           <i class="fab fa-youtube"></i>
         </div>
       </div>
-
     </section>
+    <script>window.onscroll = function() {Fixed()};</script>
     <!-- ============================= END HOME ============================ -->
 
     <!-- ============================= ABOUT ME ============================ -->
