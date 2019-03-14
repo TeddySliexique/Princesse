@@ -34,7 +34,7 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 }
 #hamburger_side_bar{
   position: fixed;
-  width: 40vw;
+  width: 30vw;
   height: 100vh;
   z-index: 1100;
   top: 0;
@@ -52,12 +52,11 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  transition:0.5s;
 }
 #home h2{
   margin: 0;
   font-size: 1.25em;
-  margin-left: 2em;
+  margin-left: 2.5em;
   color: white;
   font-family: "OptimusPrincepsBold";
   transition:0.5s;
@@ -66,32 +65,42 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   padding: 0;
   margin: 0;
   font-size: 1.25em;
-  margin-right: 2em;
+  margin-right: 2.5em;
   color: white;
   transition:0.5s;
 }
 #home .center i{
-  padding: 0;
-  margin: 0;
+  padding: 0.5em;
+  margin: 0.75em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   font-size: 1.25em;
-  margin-top: 1.75em;
-  margin-right: 2em;
+  background-color: rgba(0,0,0,.4);
+  box-shadow: 0 0 2px rgba(0,0,0,0.4);
+  border-radius: 40% 70% 10% 70%;
   color: white;
+}
+#facebook, #liked{
+  width: 1em;
+  height: 1em;
+  text-align: center;
 }
 #home .center{
   color: white;
   display: flex;
   flex-direction: column;
-  padding-top: 25vh;
+  padding-top: 17.5vh;
   align-items: center;
 }
-#home .center div{
-  margin: 0;
-  padding-left: 50px;
-  padding-top: 0;
+#home .center h1{
+  font-family: 'Cinzel';
+  font-size: 1.5em;
 }
-
-
+#home .center h3{
+  font-family: 'Cinzel Decorative';
+  font-size: 2.75em;
+  text-shadow: 1px 1px 7px black;
+}
 /*============================================================================*/
 /*============================================================================*/
 
@@ -100,7 +109,7 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   background-color: white;
   justify-content: center;
   flex-flow: row wrap;
-  font-family: "OptimusPrinceps";
+  font-family: "Cinzel Decorative";
 
 }
 #aboutme .construction{
@@ -201,7 +210,7 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 
 #services{
   font-size: 20px;
-  font-family:"OptimusPrinceps";
+  font-family:"Cinzel Decorative";
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
@@ -223,6 +232,7 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   border-radius: 10px;
   box-shadow: 0 0 10px #e8e8e8;
   margin-bottom: 20px;
+  font-family:"OptimusPrinceps";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,7 +253,7 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 
 #portfolio{
   font-size: 20px;
-  font-family:"OptimusPrinceps";
+  font-family:"Cinzel Decorative";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,7 +262,6 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 #portfolio .zone{
   margin-top: 100px;
   width: 100%;
-  height: 2900px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -271,6 +280,7 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 #portfolio .liste ul li{
     margin-right: 15px;
     margin-bottom: 25px;
+    font-family:"OptimusPrinceps";
 }
 #portfolio .image{
   display: flex;
@@ -292,6 +302,7 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  font-family:"OptimusPrinceps";
 }
 #portfolio .cache h1{
   margin-top:0;
@@ -332,7 +343,6 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
     position: relative;
     height: 100px;
     z-index: 999;
-    transition:0.5s;
   }
   #home .menu1 ul{
     list-style: none;
@@ -352,13 +362,19 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 
   #home .menu1 li{
     margin-left: 60px;
+
   }
 
   #home .menu1 h2{
     margin-left: 4em;
     transition:0.5s;
   }
-
+  #home .center h1{
+    font-size: 2em;
+  }
+  #home .center h3{
+    font-size: 4em;
+  }
   #home .menu2{
     display: none;
   }
@@ -382,7 +398,7 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
     font-size: 40px;
   }
   #aboutme .construction{
-    padding-top:70px;
+    padding-top:50px;
     padding-bottom:50px;
     justify-content: space-around;
     margin-top: 30px;
@@ -425,9 +441,6 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   /*==========================================================================*/
   /*==========================================================================*/
 
-  #portfolio .zone{
-    height: 1450px;
-  }
   #portfolio .image{
     flex-flow: row wrap;
     justify-content: space-around;
@@ -451,15 +464,8 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 /*============================================================================*/
 /*============================================================================*/
 @media (min-width:1500px){
-  #portfolio .zone{
-    height: 1900px;
-  }
+
   #aboutme .princesse{
     margin-left: 7vw;
-  }
-}
-@media (min-width:1920px){
-  #portfolio .zone{
-    height: 1350px;
   }
 }

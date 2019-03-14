@@ -1,6 +1,12 @@
-function appear(id){
-  var CBO = document.getElementById(id);
-  CBO.setAttribute('transform','translateX(0%)');
+
+function appear(){
+  var CBO = document.getElementById('side_bar');
+  if (CBO.style.transform==translateX('-100%')) {
+      CBO.style.transform=translateX('0%');
+  }
+  else{
+    CBO.style.transform==translateX('-100%');
+  }
 }
 
 function Fixed() {
@@ -36,21 +42,63 @@ function Fixed() {
 
   else{
     if(window.scrollY>window.innerHeight-1){
-      header2.style.width="100vw";
+      header2.style.width="99vw";
       header2.style.position="fixed";
       header2.style.zIndex= 1000;
       header2.style.backgroundColor="white";
       header2.style.opacity="0.7";
       couleurh2_2.style.color="black";
       burger.style.color="black";
+      burger.style.marginRight="2.5em";
 
     }else{
+      header2.style.width="97.3vw";
       header2.style.position="relative";
       header2.style.backgroundColor="transparent";
       header2.style.opacity="unset";
       couleurh2_2.style.color="white";
       burger.style.color="white";
-
     }
+  }
+}
+function Underline(param){
+
+  var home = document.getElementById("maison");
+  var aboutme = document.getElementById("propos");
+  var service = document.getElementById("serv");
+  var portfol = document.getElementById("port");
+
+  var div1 = document.getElementById("aboutme");
+  var div2 = document.getElementById("services");
+  var div3 = document.getElementById("portfolio");
+
+  var hauteur1= div1.offsetTop;
+  var hauteur2= div2.offsetTop;
+  var hauteur3= div3.offsetTop;
+
+
+  if(param < hauteur1){
+    home.style.textDecoration="underline";
+    aboutme.style.textDecoration="none";
+    service.style.textDecoration="none";
+    portfol.style.textDecoration="none";
+  }
+  if(hauteur1 <= param && param < hauteur2){
+    home.style.textDecoration="none";
+    aboutme.style.textDecoration="underline";
+    service.style.textDecoration="none";
+    portfol.style.textDecoration="none";
+  }
+  if(hauteur2 <= param && param< hauteur3){
+    home.style.textDecoration="none";
+    aboutme.style.textDecoration="none";
+    service.style.textDecoration="underline";
+    portfol.style.textDecoration="none";
+  }
+  if(hauteur3 <= param){
+    home.style.textDecoration="none";
+    aboutme.style.textDecoration="none";
+    service.style.textDecoration="none";
+    portfol.style.textDecoration="underline";
   }
 }
