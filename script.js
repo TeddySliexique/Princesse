@@ -1,12 +1,15 @@
-
 function appear(){
   var CBO = document.getElementById('side_bar');
-  if (CBO.style.transform==translateX('-100%')) {
-      CBO.style.transform=translateX('0%');
+  if (  CBO.style.transform=="translateX(" +   (-100) + "%)") {
+      CBO.style.transform="translateX(" +   (0) + "%)";
   }
-  else{
-    CBO.style.transform==translateX('-100%');
+  else{CBO.style.transform="translateX(" +   (-100) + "%)";
   }
+}
+
+function disappear(){
+  var CBO = document.getElementById('side_bar');
+  CBO.style.transform="translateX(" +   (-100) + "%)";
 }
 
 function Fixed() {
@@ -100,5 +103,12 @@ function Underline(param){
     aboutme.style.textDecoration="none";
     service.style.textDecoration="none";
     portfol.style.textDecoration="underline";
+  }
+}
+
+function animated(param){
+  if(param!=1){
+    
+    param++;
   }
 }

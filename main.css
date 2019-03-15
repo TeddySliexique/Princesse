@@ -32,16 +32,34 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
     ),url("Pictures/Fond.jpg");
   background-size: cover, no-repeat;
 }
-#hamburger_side_bar{
+#side_bar{
   position: fixed;
-  width: 30vw;
+  width: 35vw;
   height: 100vh;
-  z-index: 1100;
+  z-index: 3000;
   top: 0;
   left: 0;
-  background-color: "black";
+  background-color: rgba(0,0,0,.80);
   transform: translateX(-100%);
-  transition: 0.5s;
+  transition: .75s;
+}
+#side_bar ul{
+  padding: 0;
+  height: 96vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:space-between;
+  align-content: center;
+  text-align: center;
+}
+#side_bar ul li{
+    list-style: none;
+    font-family: "OptimusPrincepsBold";
+    font-size: 1.75em;
+}
+#side_bar ul li a{
+    text-decoration: none;
+    color: white;
 }
 
 #home .menu1{
@@ -139,7 +157,9 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
 #aboutme .competence-bar p{
   padding: 10px;
   font-family: "OptimusPrinceps";
+  white-space: nowrap;
 }
+
 #aboutme h2{
   margin: 0;
 }
@@ -160,6 +180,20 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  /* animation: slider1 2s; */
+}
+@keyframes slider1{
+  0%{
+    width: 0%;
+    color: #2c302a;
+  }
+  70%{
+    color: #2c302a;
+  }
+  100%{
+    width: 95%;
+    color: white;
+  }
 }
 #aboutme .Jauge2{
   width:80%;
@@ -169,6 +203,20 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* animation: slider2 2s; */
+}
+@keyframes slider2{
+  0%{
+    width: 0%;
+    color: #2c302a;
+  }
+  70%{
+    color: #2c302a;
+  }
+  100%{
+    width: 80%;
+    color: white;
+  }
 }
 #aboutme .Jauge3{
   width:90%;
@@ -178,6 +226,20 @@ src: url("Fonts/OptimusPrincepsSemiBold.ttf");
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* animation: slider3 2s; */
+}
+@keyframes slider3{
+  0%{
+    width: 0%;
+    color: #2c302a;
+  }
+  70%{
+    color: #2c302a;
+  }
+  100%{
+    width: 90%;
+    visibility: visible;
+  }
 }
 #aboutme .bouton{
   display: flex;
