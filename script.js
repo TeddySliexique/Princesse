@@ -45,7 +45,7 @@ function Fixed() {
 
   else{
     if(window.scrollY>window.innerHeight-1){
-      header2.style.width="99vw";
+      header2.style.width="97.5vw";
       header2.style.position="fixed";
       header2.style.zIndex= 1000;
       header2.style.backgroundColor="white";
@@ -55,7 +55,6 @@ function Fixed() {
       burger.style.marginRight="2.5em";
 
     }else{
-      header2.style.width="97.3vw";
       header2.style.position="relative";
       header2.style.backgroundColor="transparent";
       header2.style.opacity="unset";
@@ -106,9 +105,23 @@ function Underline(param){
   }
 }
 
-function animated(param){
-  if(param!=1){
-    
-    param++;
+function animated(param,param2){
+  var div1 = document.getElementById("aboutme");
+  var div2 = document.getElementById("services");
+  var div3 = document.getElementById("portfolio");
+
+  var hauteur1= div1.offsetTop;
+  var hauteur2= div2.offsetTop;
+  var hauteur3= div3.offsetTop;
+  if (hauteur1 <= param2 && param2 < hauteur2) {
+    if(param!=1){
+      document.getElementById("jauge1").style.visibility = "visible"
+      document.getElementById("jauge2").style.visibility = "visible";
+      document.getElementById("jauge3").style.visibility = "visible";
+      document.getElementById("jauge1").style.WebkitAnimation = "slider1 2s";
+      document.getElementById("jauge2").style.WebkitAnimation = "slider2 2s";
+      document.getElementById("jauge3").style.WebkitAnimation = "slider3 2s";
+      param++;
+    }
   }
 }

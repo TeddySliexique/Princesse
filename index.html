@@ -9,6 +9,9 @@
     <link rel="icon" href="Pictures/icon.png" />
     <title>Princesse Mononoke</title>
   </head>
+  <script>
+   var nbre=0;
+  </script>
   <body>
     <!-- =============================== HOME ============================== -->
     <section id="home">
@@ -79,13 +82,13 @@
             var nbre=0;
           </script>
           <div class="competence-bar">
-            <div id="jauge1"class="Jauge1"><p>Web Design</p><p id="wd"></p></div>
+            <div id="jauge1" class="Jauge1"><p>Web Design</p><p>95%</p></div>
           </div>
           <div class="competence-bar">
-            <div id="jauge2"class="Jauge2"><p>Branding</p><p id="brand"></p></div>
+            <div id="jauge2" class="Jauge2"><p>Branding</p><p>80%</p></div>
           </div>
           <div class="competence-bar">
-            <div id="jauge3"class="Jauge3"><p>Development</p><p id="dvlp"></p></div>
+            <div id="jauge3" class="Jauge3"><p>Development</p><p>90%</p></div>
           </div>
         </div>
       <div>
@@ -97,7 +100,7 @@
       </div>
     </section>
     <script>
-            window.onscroll = function() {Fixed();Underline(window.scrollY);animated(nbre); };
+            window.onscroll = function() {Fixed();Underline(window.scrollY);animated(nbre,window.scrollY); };
     </script>
     <!-- =========================== END ABOUT ME ========================== -->
 
@@ -106,32 +109,32 @@
       <h1>Services.</h1>
       <div class="placement">
         <div class="case">
-          <i class="fas fa-laptop"></i>
+          <i id="pinceau" class="fas fa-paint-brush"></i>
           <h3>Web Design</h3>
           <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
         </div>
         <div class="case">
-          <i class="fas fa-bullhorn"></i>
+          <i id="poisson" class="fas fa-fish"></i>
           <h3>Branding</h3>
           <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
         </div>
         <div class="case">
-          <i class="fas fa-umbrella"></i>
+          <i id="parapluie" class="fas fa-umbrella"></i>
           <h3>Developement</h3>
           <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
         </div>
         <div class="case">
-          <i class="far fa-gem"></i>
+          <i id="feuille" class="fas fa-leaf"></i>
           <h3>Creative Design</h3>
           <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
         </div>
         <div class="case">
-          <i class="fas fa-desktop"></i>
+          <i id="parchemin" class="fas fa-scroll"></i>
           <h3>Fully Responsive</h3>
           <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
         </div>
         <div class="case">
-          <i class="fas fa-camera"></i>
+          <i id="chat" class="fas fa-cat"></i>
           <h3>Retina Ready</h3>
           <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
         </div>
